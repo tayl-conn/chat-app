@@ -15,7 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\tayllib.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tayllib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TaylSocket.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TaylSocket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

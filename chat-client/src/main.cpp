@@ -1,7 +1,12 @@
 #include <iostream>
+#include "tayllib.h"
 
 int main() {
 
-	std::cout << "Hey! - Client" << std::endl;
+	TaylLib::WSAInit();
 
+	TaylLib::TaylSocket clientSocket = TaylLib::TaylSocket();
+	std::cout << clientSocket.connect_to();
+
+	std::cin.get();
 }

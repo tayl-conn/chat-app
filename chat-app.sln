@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chat-client", "chat-client\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chat-server", "chat-server\chat-server.vcxproj", "{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tayllib-winsock", "tayllib-winsock\tayllib-winsock.vcxproj", "{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}.Release|x64.Build.0 = Release|x64
 		{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}.Release|x86.ActiveCfg = Release|Win32
 		{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}.Release|x86.Build.0 = Release|Win32
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Debug|x64.ActiveCfg = Debug|x64
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Debug|x64.Build.0 = Debug|x64
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Debug|x86.ActiveCfg = Debug|Win32
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Debug|x86.Build.0 = Debug|Win32
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Release|x64.ActiveCfg = Release|x64
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Release|x64.Build.0 = Release|x64
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Release|x86.ActiveCfg = Release|Win32
+		{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
