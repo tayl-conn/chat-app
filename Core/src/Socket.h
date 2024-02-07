@@ -4,6 +4,7 @@
 #include "NetResult.h"
 #include "IPVersion.h"
 #include "IPTarget.h"
+#include "Packet.h"
 
 namespace NetCore {
 

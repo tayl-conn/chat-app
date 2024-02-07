@@ -19,14 +19,17 @@ int main() {
 	Socket acceptSocket;
 	socket.accept(acceptSocket);
 
-	std::cout << "Accepted new connection\n";
+	while (true) {
 
-	char buffer[128];
-	int bytesRecieved = 0;
+		char buffer[128];
+		int bytesRecieved = 0;
+		acceptSocket.recieve(buffer, 128, bytesRecieved);
 
-	acceptSocket.recieve(buffer, 128, bytesRecieved);
+		if (bytesRecieved == 0 || bytesRecieved == SOCKET_ERROR)
+			break;
 
-	std::cout << buffer << '\n';
+		printf("%s\n", buffer);
+	}
 
 	acceptSocket.close();
 	socket.close();

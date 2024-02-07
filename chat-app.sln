@@ -5,9 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\chat-client.vcxproj", "{A29DA7AA-58F3-4CAE-BE10-494A9C83CCC8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Core\tayllib-winsock.vcxproj", "{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetCore", "Core\tayllib-winsock.vcxproj", "{7FC935F5-58C6-45C2-BE6B-8AD3C38B94A4}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\chat-server.vcxproj", "{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatCore", "ChatCore\ChatCore.vcxproj", "{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}.Release|x64.Build.0 = Release|x64
 		{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}.Release|x86.ActiveCfg = Release|Win32
 		{71961CB9-BBE8-428E-AB75-2538A8FD8CE5}.Release|x86.Build.0 = Release|Win32
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Debug|x64.ActiveCfg = Debug|x64
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Debug|x64.Build.0 = Debug|x64
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Debug|x86.ActiveCfg = Debug|Win32
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Debug|x86.Build.0 = Debug|Win32
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Release|x64.ActiveCfg = Release|x64
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Release|x64.Build.0 = Release|x64
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Release|x86.ActiveCfg = Release|Win32
+		{E2ABB081-A8B5-42D0-9FAC-52321787FDE0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

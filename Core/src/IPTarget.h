@@ -11,7 +11,7 @@ namespace NetCore {
 
 	private:
 
-		IPVersion ipVersion = IPVersion::Unassigned;
+		IPVersion ipVersion = IPVersion::None;
 		std::string hostname = "";
 		std::string ip = "";
 		unsigned short port = 0;

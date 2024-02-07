@@ -5,7 +5,7 @@ namespace NetCore {
 
 	enum IPVersion {
 
-		Unassigned,
+		None,
 		IPv4,
 		IPv6
 

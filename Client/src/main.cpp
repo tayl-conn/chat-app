@@ -14,10 +14,18 @@ int main() {
 	socket.create();
 	socket.connect(IPTarget("127.0.0.1", 50270));
 
-	std::string message = "Hello!\0";
-	int bytesSent = 0;
-	socket.send(message.data(), message.size(), bytesSent);
-	std::cout << "Sent " << bytesSent << " bytes!";
+	while (true) {
+
+		std::cout << "> ";
+
+		std::string message;
+		std::getline(std::cin, message);
+		message += '\0';
+
+		int bytesSent = 0;
+		socket.send(message.data(), message.size(), bytesSent);
+		Sleep(500);
+	}
 
 	socket.close();
 	std::cin.get();
