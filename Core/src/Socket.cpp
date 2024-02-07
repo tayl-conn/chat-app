@@ -17,7 +17,7 @@ namespace NetCore {
 			return NetResult::NotImplemented;
 		}
 
-		return NetResult::Success;
+		return setBlocking(false);
 	}
 
 	NetResult Socket::close() {
@@ -125,6 +125,25 @@ namespace NetCore {
 
 		outBytesRecieved = numberOfBytesRecieved;
 		return NetResult::Success;
+	}
+
+	NetResult Socket::setBlocking(bool shouldBlock)
+	{
+		unsigned long blockingOpt = 0;
+		unsigned long nonBlockingOpt = 1;
+		int result = ioctlsocket(handle, FIONBIO, shouldBlock ? &blockingOpt : &nonBlockingOpt);
+
+		if (result == SOCKET_ERROR) {
+			int error = WSAGetLastError();
+			return NetResult::NotImplemented;
+		}
+
+		return NetResult::Success;
+	}
+
+	SocketHandle Socket::getHandle()
+	{
+		return handle;
 	}
 
 }

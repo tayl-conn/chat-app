@@ -154,6 +154,7 @@
     <ClCompile Include="src\Socket.h" />
     <ClCompile Include="src\NetCore.cpp" />
     <ClCompile Include="src\NetCore.h" />
+    <ClCompile Include="src\TCPClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Packet.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="src\IPVersion.h" />
     <ClInclude Include="src\NetResult.h" />
     <ClInclude Include="src\SocketHandle.h" />
+    <ClInclude Include="src\TCPClient.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

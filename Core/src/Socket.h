@@ -27,6 +27,8 @@ namespace NetCore {
 		NetResult connect(IPTarget target);
 		NetResult send(const void* buffer, int numberOfBytesToSend, int& outBytesSent);
 		NetResult recieve(const void* buffer, int numberOfBytesToRead, int& outBytesRecieved);
+		NetResult setBlocking(bool shouldBlock);
+		SocketHandle getHandle();
 
 	};
 
